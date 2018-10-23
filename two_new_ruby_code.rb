@@ -14,7 +14,7 @@ def slice
 end
 
 def fetch
-  
+  ["1","2","3","4"].take(2)
 end
 
 def transform_values
