@@ -8,8 +8,8 @@ class My_test < Minitest::Test
   def test_split_as_function
     split
   end
-  def test_for_delete_at
-    delete_at
+  def test_for_slice
+    slice
   end
   def test_for_fetch
     fetch
@@ -17,7 +17,7 @@ class My_test < Minitest::Test
 
   p split
   p strip
-  p delete_at
+  p slice
   p fetch
 end
 

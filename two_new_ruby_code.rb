@@ -9,8 +9,16 @@ def strip
   ["1, 2, 3, 4"]
 end
 
-def delete_at
-  %w[1 2 3 4]
+def slice(x)
+  integer += w%[1 2 3 4]
+  s = slice
+  a = [1...4]
+if s <= a
+  then return
+elsif puts integer
+end
+
+  
 end
 
 def fetch
