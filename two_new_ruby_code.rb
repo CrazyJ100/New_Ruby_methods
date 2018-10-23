@@ -13,7 +13,10 @@ def slice(x)
 x.drop_while{|i| i < 3}
 if x % 2 
   then x.drop_while {|i| i > 3}
+else
+  puts s
 end
+
 end
 
   
