@@ -8,7 +8,10 @@ class My_test < Minitest::Test
   def test_split_as_function
     split
   end
-  def test_for_slice
+  def test_strip_as_function
+    strip
+  end
+  def test_for_slice_as_function
     slice
   end
 

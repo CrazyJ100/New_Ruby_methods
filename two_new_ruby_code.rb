@@ -9,17 +9,10 @@ def strip
   ["1, 2, 3, 4"]
 end
 
-def slice(x)
-x.drop_while{|i| i < 3}
-if x % 2 
-  then x.drop_while {|i| i > 3}
-else
-  puts s
+def slice
+  ["1","2","3","4"].drop(2)
 end
 
-end
-
-  
 def fetch
   
 end
