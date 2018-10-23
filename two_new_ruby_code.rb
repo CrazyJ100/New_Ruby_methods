@@ -10,17 +10,13 @@ def strip
 end
 
 def slice(x)
-  integer += w%[1 2 3 4]
-  s = slice
-  a = [1...4]
-if s <= a
-  then return
-elsif puts integer
+x.drop_while{|i| i < 3}
+if x % 2 
+  then x.drop_while {|i| i > 3}
+end
 end
 
   
-end
-
 def fetch
   
 end

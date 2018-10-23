@@ -11,9 +11,6 @@ class My_test < Minitest::Test
   def test_for_slice
     slice
   end
-  def test_for_fetch
-    fetch
-  end
 
   p split
   p strip
