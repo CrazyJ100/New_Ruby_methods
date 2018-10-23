@@ -6,21 +6,26 @@ def split
 end
 
 def strip
-  ["1, 2, 3, 4"]
+  ["1, 2, 3, 4"].each do
+  end
 end
 
 def slice
-  ["1","2","3","4"].drop(2)
+  ["1","2","3","4"].drop(2).each do
+  end
 end
 
 def fetch
-  ["1","2","3","4"].take(2)
+  count += 1
+  v = count
+  ["1","2","3","4"].take(v).each do
+  end
 end
 
-def transform_values
+# def transform_values
 
-end
+# end
 
-def compare_by_identity
+# def compare_by_identity
 
-end
+# end
