@@ -47,33 +47,3 @@ def strip(remove)
   arr.join
   p arr.join
 end
-
-
-
-
-
-
-
-
-
-
-# def slice
-#   ["1","2","3","4"].drop(2).each do
-#   end
-# end
-
-# def fetch
-#   count = 0
-#   count += 1
-#   ["1","2","3","4"].take(2).each do
-#   end
-#   return count.to_s
-# end
-
-# def invert
-
-# end
-
-# # def compare_by_identity
-
-# # end
