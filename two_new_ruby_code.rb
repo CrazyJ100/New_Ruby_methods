@@ -1,8 +1,19 @@
-def split
-  ["1,
-  2,
-  3,
-  4"]
+def split(str,splitter)
+  if str.class != String
+  str = "incorrect"
+  else 
+    if splitter == ""
+    p str.class
+    arr = []
+    arr << str
+    elsif splitter == "//"
+      arr = []
+      str.length.times do |letter|
+        arr << str[letter]
+      end
+      return arr
+    end
+  end
 end
 
 def strip
@@ -16,15 +27,16 @@ def slice
 end
 
 def fetch
+  count = 0
   count += 1
-  v = count
-  ["1","2","3","4"].take(v).each do
+  ["1","2","3","4"].take(2).each do
   end
+  return count.to_s
 end
 
-# def transform_values
+def invert
 
-# end
+end
 
 # def compare_by_identity
 
