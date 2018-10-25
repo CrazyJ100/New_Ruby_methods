@@ -21,23 +21,16 @@ class My_test < Minitest::Test
     splitter = "//"
     assert_equal(["h","e","l","l","o"], split("hello",splitter))
   end
-
-  # def test_strip_as_function
-  #   strip
-  # end
-  # def test_for_slice_as_function
-  #   slice
-  # end
-  # def test_for_fetch_as_function
-  #   fetch
-  # end
-  # def test_for_invert
-  #   invert
-  # end
-
-  # p split
-  # p strip
-  # p slice
-  # p fetch
+  def test_for_strip_as_function
+    assert_equal(String, strip("hello").class)
+  end
+  def test_for_space
+    assert_equal("hello", strip("hello  "))
+  end
+  def test_for_before_and_after
+    assert_equal("hello", strip("  hello  "))
+  end
+  def test_for_space_between_letters
+    assert_equal("h e l l o", strip(" h e l l o "))
+  end
 end
-

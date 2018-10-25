@@ -16,28 +16,64 @@ def split(str,splitter)
   end
 end
 
-def strip
-  ["1, 2, 3, 4"].each do
+def strip(remove)
+  # found = false
+  p remove
+  # remove.delete " "
+  str = ""
+  p remove.length
+  counter = 0 
+  arr = []
+  remove.length.times do
+  p counter
+  arr << remove[counter]
+    p "this is #{remove[counter]}"
+    counter += 1    
   end
-end
-
-def slice
-  ["1","2","3","4"].drop(2).each do
+  spaceless = false
+  spaceless1 = false
+  until spaceless == true && spaceless1 == true
+    if arr.first == " "
+      arr.shift
+    else 
+      spaceless1 = true
+    end
+    if arr.last == " "
+      arr.pop
+    else
+    spaceless = true
+    end    
   end
+  arr.join
+  p arr.join
 end
 
-def fetch
-  count = 0
-  count += 1
-  ["1","2","3","4"].take(2).each do
-  end
-  return count.to_s
-end
 
-def invert
 
-end
 
-# def compare_by_identity
+
+
+
+
+
+
+# def slice
+#   ["1","2","3","4"].drop(2).each do
+#   end
+# end
+
+# def fetch
+#   count = 0
+#   count += 1
+#   ["1","2","3","4"].take(2).each do
+#   end
+#   return count.to_s
+# end
+
+# def invert
 
 # end
+
+# # def compare_by_identity
+
+# # end
