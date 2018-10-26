@@ -6,9 +6,12 @@ class My_test < Minitest::Test
     assert_equal(1,1)
   end
   def test_delete_at
-    assert_equal(Array, delete_at(["cat","dog","bear"]))
+    assert_equal(Array, delete_at(["cat","dog","bear"]).class)
   end
   def test 
-    assert_equal(["cat","dog","bear"], delete_at)
+    assert_equal(["cat","dog","bear"], delete_at[2])
   end
+  # def test_for_fetch
+  #   assert_equal(Array, fetch["deer","boar","rabbit"]).class)
+  # end
 end
