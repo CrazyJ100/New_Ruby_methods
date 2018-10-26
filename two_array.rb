@@ -9,7 +9,7 @@ class My_test < Minitest::Test
     assert_equal(Array, delete_at(["cat","dog","bear"]).class)
   end
   def test 
-    assert_equal(["cat","dog","bear"], delete_at[2])
+    assert_equal(["cat","dog","bear"], delete_at)
   end
   # def test_for_fetch
   #   assert_equal(Array, fetch["deer","boar","rabbit"]).class)

@@ -1,9 +1,9 @@
 def delete_at(dlt)
   if dlt.class != String 
-    dlt = [""]
+    dlt == [""]
     str = ""
     arr = []
-    # arr << str
+    arr << str
   else
     dlt.length.times do |quotes|
       arr << str[quotes]
