@@ -6,7 +6,7 @@ class My_test < Minitest::Test
     assert_equal(1,1)
   end
   def test_delete_at
-    assert_equal(Array, delete_at("string"))
+    assert_equal(String, delete_at(["cat","dog","bear"],remove).class)
   end
 
 end
