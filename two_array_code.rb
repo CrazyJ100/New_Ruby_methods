@@ -1,15 +1,14 @@
 def delete_at(dlt)
   if dlt.class != String 
-    p dlt.class
+    dlt = [""]
     str = ""
     arr = []
-    arr << str
+    dlt << str
   else
     dlt.length.times do
       arr << str
     end
     return arr
   end
-    p dlt
-    p arr 
+    p dlt.to_a
 end
