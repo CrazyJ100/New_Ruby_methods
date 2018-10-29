@@ -8,14 +8,8 @@ def delete_at(dlt)
       dlt.each do |x|
         arr << x
       end
-      # end
-      # return str if x[1] == str
     end
-      
-#     # dlt.times do |quotes| 
-#     #   arr << str[quotes]
-#     # end
-    return arr[3]
+    return arr
   end
     p dlt
     p arr 
