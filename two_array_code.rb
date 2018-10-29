@@ -1,23 +1,22 @@
 def delete_at(dlt)
   if dlt.class != String 
-    dlt == [""]
     str = ""
     arr = []
     arr << str
   else
-    dlt.length.times do |quotes|
-      arr << str[quotes]
+    dlt.length.times do
+      dlt.each do |x|
+        arr << x
+      end
+      # end
+      # return str if x[1] == str
     end
-    return ""
+      
+#     # dlt.times do |quotes| 
+#     #   arr << str[quotes]
+#     # end
+    return arr[3]
   end
-  p dlt
+    p dlt
+    p arr 
 end
-
-
-# def fetch(f)
-#   if f.class != String
-#     f = [""]
-#   else 
-#     return "its wrong"
-#   end
-# end
